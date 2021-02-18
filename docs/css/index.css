@@ -1,5 +1,12 @@
+/* すべての要素 */
+header, main, footer{
+  background-color: #454f69;
+  color: aliceblue;
+}
+
 .card{
   margin-bottom: 7%;
+  background-color: #1c273e;
 }
 
 .liquor-img{
@@ -11,4 +18,10 @@
 
 h5.card-name{
   font-weight: bold;/*太字*/
+}
+
+p.card-type{
+  /* background-color: red; */
+  display: inline-block;
+  border-radius: 10px;
 }
