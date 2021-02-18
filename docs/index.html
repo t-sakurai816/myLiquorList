@@ -48,7 +48,7 @@
           <!---スマホ1つ,タブレット2つ,PC3つ vue.jsで繰り返し表示-->
           <div v-for="list in info" class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
             <div class="card">
-              <img v-bind:data-src="list.imgUrl" alt="{{ list.name }}" class="lazyload liquor-img">
+              <img :data-src="list.imgUrl" alt="{{ list.name }}" class="lazyload liquor-img">
               <div class="card-body">
                 <h5 class="card-name">{{ list.name }}</h5>
                 <p class="card-type">{{ list.type }}</p>
