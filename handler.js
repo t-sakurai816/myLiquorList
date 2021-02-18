@@ -25,7 +25,7 @@ module.exports.readAll = (event, context, callback) => {
     const response = {
       statusCode: 200,
       headers: {
-        "Access-Control-Allow-Origin": "https://liquor.saku-dev.space"
+        "Access-Control-Allow-Origin": "*"
       },
       body: JSON.stringify(result),
     };
