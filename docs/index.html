@@ -28,8 +28,7 @@
   <title>お酒のリスト</title>
   <meta property="og:title" content="sakurai家のお酒リスト">
   <meta property="og:description" content="sakuraiの家で飲めるお酒です。品切れ御免">
-  <meta property="og:image"
-    content="https://liquor.saku-dev.space/drink_cocktail.png" />
+  <meta property="og:image" content="https://liquor.saku-dev.space/drink_cocktail.png" />
   <meta property="og:type" content="website">
   <!-- Google検索されなくする -->
   <meta name="robots" content="noindex">
@@ -62,6 +61,8 @@
     </div>
     <!-- Vue.jsを読み込み -->
     <script src="js/index.js"></script>
+    <!-- 遅延読み込みを実行 -->
+    <script>lazyload();</script>
   </main>
   <!-- 中央寄せにして、上下パディング -->
   <footer class="text-center py-5">
