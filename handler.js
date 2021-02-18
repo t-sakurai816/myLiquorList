@@ -11,7 +11,7 @@ module.exports.create = (event, context, callback) => {
     const response = {
       statusCode: 200,
       headers: {
-        "Access-Control-Allow-Origin": "*"
+        "Access-Control-Allow-Origin": "https://liquor.saku-dev.space"
       },
       body: JSON.stringify(result),
     };
@@ -25,7 +25,7 @@ module.exports.readAll = (event, context, callback) => {
     const response = {
       statusCode: 200,
       headers: {
-        "Access-Control-Allow-Origin": "*"
+        "Access-Control-Allow-Origin": "https://liquor.saku-dev.space"
       },
       body: JSON.stringify(result),
     };
@@ -39,7 +39,7 @@ module.exports.readOne = (event, context, callback) => {
     const response = {
       statusCode: 200,
       headers: {
-        "Access-Control-Allow-Origin": "*"
+        "Access-Control-Allow-Origin": "https://liquor.saku-dev.space"
       },
       body: JSON.stringify(result),
     };
@@ -53,7 +53,7 @@ module.exports.update = (event, context, callback) => {
     const response = {
       statusCode: 200,
       headers: {
-        "Access-Control-Allow-Origin": "*"
+        "Access-Control-Allow-Origin": "https://liquor.saku-dev.space"
       },
       body: JSON.stringify(result),
     };
@@ -67,7 +67,7 @@ module.exports.delete = (event, context, callback) => {
     const response = {
       statusCode: 200,
       headers: {
-        "Access-Control-Allow-Origin": "*"
+        "Access-Control-Allow-Origin": "https://liquor.saku-dev.space"
       },
       body: JSON.stringify(result),
     };
