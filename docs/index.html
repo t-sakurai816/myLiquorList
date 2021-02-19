@@ -21,8 +21,6 @@
   <script src="https://cdn.jsdelivr.net/npm/vue"></script>
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js"></script>
-  <!-- GoogleMaterial Icon -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- CSS -->
   <link rel="stylesheet" href="css/index.css">
   <!-- favicon -->
@@ -40,8 +38,6 @@
   <header class="text-center py-3">
     <h1>Saku's House Liquor List</h1>
     <p>在庫切れはご愛嬌。画像はイメージです</p>
-    <p class="d-flex justify-content-center align-content-between"><i
-        class="material-icons">warning_amber</i>画像が表示されないときは再読み込みしてください</p>
   </header>
 
   <main>
@@ -50,9 +46,9 @@
       <div class="container">
         <div class="row">
           <!---スマホ1つ,タブレット2つ,PC3つ vue.jsで繰り返し表示-->
-          <div v-for="list in info" class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+          <div v-for="list in info" v-bind:key="list.id" class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
             <div class="card">
-              <img v-bind:data-src="list.imgUrl" alt="{{ list.name }}" class="lazyload liquor-img">
+              <img  v-bind:data-src="list.imgUrl" v-bind:src="list.imgUrl" v-bind:alt="list.name" class="lazyload liquor-img">
               <div class="card-body">
                 <h5 class="card-name">{{ list.name }}</h5>
                 <p class="card-type">{{ list.type }}</p>
