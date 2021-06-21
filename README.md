@@ -1,8 +1,7 @@
 # myLiquorList
 
-サーバーレスフレームワークを使ってCRUDできるようにしました  
-[リンク](https://liquor.saku-dev.space/)
-GitHub Pagesを利用して独自ドメインでホスティングしています
+私の自宅で飲めるお酒が載っています。在庫切れはご愛嬌  
+https://liquor.sakudev.net/
 
 ## 開発環境のバージョン
 
